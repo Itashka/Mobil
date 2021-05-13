@@ -1,0 +1,51 @@
+body{
+    font-size: 22px;
+    color: #000000;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgb(164, 218, 84);
+}
+
+.input{
+    width: 750px;
+    margin: 50px 0px 0px 0px;
+}
+
+.list{
+    list-style: none;
+    background-color: #F0FFFF;
+    border: 1px dotted #070707;
+    text-align: left;
+}
+
+.task{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-items: space-between;
+    width: 780px;
+    margin: 5px;
+}
+
+.text{
+    width: 700px;
+    overflow-wrap: break-word;
+}
+
+.checkbox{
+    margin-right: 25px;
+}
+
+.buttonDel {
+    margin-left: auto;
+    color: red;
+    border-color: red;
+    border-radius: 90%;
+    height: 25px;
+    width: 25px; 
+}
+
+.done{
+    text-decoration: line-through;
+}
