@@ -30,6 +30,7 @@ var vue = new Vue({
         },
         calc: function(){
             this.result = eval(this.result);
+            this.result = this.result.toString();
         },
         
         point: function(){
@@ -59,8 +60,14 @@ var vue = new Vue({
             }
         },
         n: function(){
-            this.result = this.result.toString();
-            this.result += n;
+            if(this.result.slice(-1) === '+' || this.result.slice(-1) === '-' || this.result.slice(-1) === '*' || this.result.slice(-1) === '/' || this.result.slice(-1) === ''){
+                this.result += '0.';
+                flag = false;
+            }
+            else{
+                this.result = this.result.toString();
+                this.result += n;   
+            }
         }
     }
 })

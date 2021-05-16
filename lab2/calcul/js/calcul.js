@@ -25,7 +25,6 @@ function onButtonClick(button_click) {
     } else if (button_click.target.innerHTML === '=') {
         try{
             text.innerHTML = eval(text.innerHTML);
-            flag = true;
         }
         catch{
             text.innerHTML = 'Невалидные данные';
@@ -53,17 +52,16 @@ function onButtonClick(button_click) {
                 text.innerHTML += button_click.target.innerHTML;
         }else 
             text.innerHTML += button_click.target.innerHTML;
-    } else if (text.innerHTML === '0' || text.innerHTML === ' 0') {
-        if (button_click.target.innerHTML === '0'){
-            text.innerHTML = '0';
-        }else if (button_click.target.innerHTML === '.') {
-            text.innerHTML = '0.';
-        }else
-            text.innerHTML += button_click.target.innerHTML;
+    } else if (button_click.target.innerHTML === '0'){
+        if (text.innerHTML.slice(-1) === '+' || text.innerHTML.slice(-1) === '-' || text.innerHTML.slice(-1) === '*' || text.innerHTML.slice(-1) === '/' || text.innerHTML === ' ' || text.innerHTML === ''){
+            text.innerHTML += '0.';
+            flag = false;
+        }else{
+            text.innerHTML += button_click.target.innerHTML;  
+        }
     } else if (button_click.target.innerHTML === 'C') {
         text.innerHTML = text.innerHTML.slice(0, -1);
     } else {
         text.innerHTML += button_click.target.innerHTML;
-    
     }
 };
