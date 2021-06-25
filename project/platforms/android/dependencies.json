@@ -1,0 +1,22 @@
+[
+    {
+        "name": "@nativescript/core",
+        "directory": "..\\..\\node_modules\\@nativescript\\core"
+    },
+    {
+        "name": "@nativescript/theme",
+        "directory": "..\\..\\node_modules\\@nativescript\\theme"
+    },
+    {
+        "name": "nativescript-socketio",
+        "directory": "..\\..\\node_modules\\nativescript-socketio"
+    },
+    {
+        "name": "nativescript-toasty",
+        "directory": "..\\..\\node_modules\\nativescript-toasty"
+    },
+    {
+        "name": "nativescript-vue",
+        "directory": "..\\..\\node_modules\\nativescript-vue"
+    }
+]

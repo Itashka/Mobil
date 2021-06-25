@@ -1,0 +1,4 @@
+#Thu Jun 24 20:44:05 YEKT 2021
+base.0=C\:\\Users\\Bogdan\\Desktop\\gg\\platforms\\android\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
